@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-tiingo",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Tiingo MCP — wraps the Tiingo financial API (tiingo.com)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-614528477fd4719359a5a25221b2283f91023be39c7d973b1508bc349841117d",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "sourceHash": "v1-a49831891558e69e158a7d84216618060201282e23219489dfaf3241e2d2becb",
+    "sourceCommit": "66a0692f029179984440cef6938cba7fdd41d66d"
   }
 }
