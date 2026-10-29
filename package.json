@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-tiingo",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Tiingo MCP — wraps the Tiingo financial API (tiingo.com)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-tiingo": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "tiingo"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-tiingo.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/tiingo",
   "pipeworx": {
-    "sourceHash": "v1-a49831891558e69e158a7d84216618060201282e23219489dfaf3241e2d2becb",
-    "sourceCommit": "66a0692f029179984440cef6938cba7fdd41d66d"
+    "mode": "gateway",
+    "slug": "tiingo",
+    "gatewaySlug": "tiingo",
+    "sourceHash": "v1-580c2a3ebdf52500465fc8096ddec9cea34682d84400804bf478131ae3c403f8",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
