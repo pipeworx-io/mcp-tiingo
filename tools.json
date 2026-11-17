@@ -57,7 +57,7 @@
     }
   },
   {
-    "name": "news",
+    "name": "tiingo_news",
     "description": "Get recent financial news articles, optionally filtered by tickers or tags. Returns title, description, URL, published date, source, and related tickers. Requires a caller-supplied Tiingo API key on the News-tier plan (Power or higher) — pass it as _apiKey. Example: news({ tickers: \"aapl,msft\", limit: 10, _apiKey: \"your_tiingo_key\" })",
     "inputSchema": {
       "type": "object",
